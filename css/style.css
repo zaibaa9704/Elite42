@@ -3,23 +3,35 @@
   padding: 0;
 }
 
-li {
-  list-style: none;
-}
-
-ul {
+ul.parent {
   display: flex;
+  list-style: none;
   justify-content: flex-end;
   background-color: grey;
+  padding: 5px;
 }
-ul li {
-  text-decoration: none;
+ul.parent li {
+  position: relative;
+}
+ul.parent li a {
+  padding: 10px;
   text-transform: uppercase;
-  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
 }
-ul li:hover {
+ul.parent li a:hover {
   color: red;
 }
-ul li {
-  padding: 15px;
+ul.parent li ul {
+  position: absolute;
+  display: none;
+  background-color: grey;
+  list-style: none;
+  width: 150px;
+  top: 24px;
+}
+ul.parent li:hover ul {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

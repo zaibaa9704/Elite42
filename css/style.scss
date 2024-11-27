@@ -2,26 +2,37 @@
     margin: 0;
     padding: 0;
 }
- li{
-    list-style: none;
-    
-}
-
-ul{
+ul.parent{
     display: flex;
+    list-style: none;
     justify-content: flex-end;
-    background-color:grey;
-    li{
-    text-decoration: none;
+    background-color: grey;
+    padding: 5px;
+li{
+    position: relative;
+    a{
+    padding: 10px;
     text-transform: uppercase;
-    color:#fff;
-    } 
-li{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
     &:hover{
-        color:red;
+        color: red;
     }
-}
-li{
-   padding: 15px;
-}
+    }
+    ul{
+        position: absolute;
+        display: none;
+        background-color: grey;
+        list-style: none;
+        width: 150px;
+        top: 24px;
+    }
+    &:hover{
+        ul{
+            display: block;
+        }
+    }
+  }
 }
