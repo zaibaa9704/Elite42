@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  background-color: grey;
+}
+ul li {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+ul li:hover {
+  color: red;
+}
+ul li {
+  padding: 15px;
+}/*# sourceMappingURL=style.css.map */
